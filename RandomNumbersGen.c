@@ -16,11 +16,14 @@ int random_function(int max)
 int main()
 {
 	int random;
+	int max;	
 	
-	printf("%d\n", getpid());	
+	printf("Write a max value : \n");
+	fflush(stdout);
+	scanf("%d", &max);	
 
 	srand(getpid());	
-	random = random_function(10);
+	random = random_function(max);
 	
 	printf("Your random number %d\n", random);
 
